@@ -104,9 +104,9 @@ function graphw_plugin_updater_init() {
             'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
             'proper_folder_name' => 'graphw-toolbox', // this is the name of the folder your plugin lives in
             'api_url' => 'https://api.github.com/repos/PeekskillWebDesign/graphw-toolbox', // the GitHub API url of your GitHub repo
-            'raw_url' => 'https://raw.github.com/PeekskillWebDesign/graphw-toolbox/master', // the GitHub raw url of your GitHub repo
-            'github_url' => 'https://github.com/PeekskillWebDesign/graphw-toolbox', // the GitHub url of your GitHub repo
-            'zip_url' => 'https://github.com/PeekskillWebDesign/graphw-toolbox/zipball/master', // the zip url of the GitHub repo
+            'raw_url' => 'https://github.com/DIntriligator/Graphics-Westchester-Toolset/master', // the GitHub raw url of your GitHub repo
+            'github_url' => 'https://github.com/DIntriligator/Graphics-Westchester-Toolset', // the GitHub url of your GitHub repo
+            'zip_url' => 'https://github.com/DIntriligator/Graphics-Westchester-Toolset/zipball/master', // the zip url of the GitHub repo
             'sslverify' => true, // whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
             'requires' => '4.0.0', // which version of WordPress does your plugin require?
             'tested' => '4.5.2', // which version of WordPress is your plugin tested up to?
