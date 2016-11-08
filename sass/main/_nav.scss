@@ -1,0 +1,40 @@
+.graphw_toolset_navbar{
+	margin:20px;
+	padding:5px;
+	background-color:#ddd;
+	border: 1px solid #ddd;
+	a{
+		padding:10px;
+		font-size:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	position:relative;
+	margin-right:10px;
+	margin-left:10px;
+	color:#222;
+	&.is-active{
+	background-color:#FAAF3A;
+	border-radius: 2px;
+	color:#fff;
+	}
+	&:hover{
+		cursor:pointer !important;
+	}
+	&:focus{
+		outline:none;
+		box-shadow:none;
+	}
+	}
+}
+.graphw_toolset_admin_nav{
+	p{
+		display:inline;
+		color:#aaa;
+		margin-right:10px;
+	}
+	a{
+		color:#aaa;
+		text-decoration: underline;
+		margin-right:10px;
+	}
+}

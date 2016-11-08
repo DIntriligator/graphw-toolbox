@@ -1,0 +1,93 @@
+
+.graphw-maintenance {
+	height:100vh;
+	width:100%;
+  display: table;
+  position: relative;
+}
+
+.graphw-maintenance  .maintenance-content {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.graphw-maintenance .button,
+.graphw-maintenance button,
+.graphw-maintenance input[type="submit"],
+.graphw-maintenance input[type="reset"],
+.graphw-maintenance input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box; }
+//footer ------------------
+.graphw-maintenance .footer{
+	height: 5rem;
+}
+.maintenance_message{
+  width:100%;
+  text-align:center;
+  display:inline-block;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+@media(min-width:750px){
+  .maintenance_message{
+    width:600px;
+    text-align:center;
+    display:inline-block;
+  }
+
+}
+.graphw-maintenance .sub-footer {
+	height:5rem;
+	background:#aaa;
+}
+.footer-coming-soon{
+		position:absolute;
+	width:100%;
+	bottom:0;
+  left: 0;
+}
+.field-wrap:not(:last-child){
+  display: inline-block;
+}
+.field-wrap:not(:last-child) input{
+  height: 35px;
+}
+.field-wrap:not(:last-child) input:focus {
+  outline: none;
+  border: 1px solid $accent;
+}
+
+#ninja_forms_field_6_div_wrap {
+  margin-right: 1rem;
+}
+#ninja_forms_field_7_div_wrap {
+  margin-left: 1rem;
+}
+
+.ninja-forms-required-items {
+  display: none;
+}
+
+.ninja-forms-req-symbol {
+  color: #ddd;
+}
+.text-center{
+  text-align:center;
+}

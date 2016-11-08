@@ -1,0 +1,72 @@
+.graphw_admin-card{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+	position:relative;
+	.submit{
+		position:absolute;
+		bottom:0;
+		right:0;
+		width:100%;
+	}
+	.image-uploader-div{
+		position:absolute;
+		bottom:60px;
+		right:0;
+		width:100%;
+	}
+}
+.graphw_admin-card{
+	padding-bottom:70px;
+}
+.login-logo-card img{
+	max-height:200px;
+	width:auto;
+}
+.image-size-card{
+min-height: 500px;
+}
+#favicon-image{
+	margin-top:50px;
+}
+.image-size-card{
+	height: auto;
+	min-height:auto;
+	padding-bottom:70px;
+}
+.settings-card{
+	height:500px;
+}
+#custom-css-field{
+	height:400px;
+	width:100%;
+	margin-bottom:40px;
+}
+.cpt_delete_section{
+	min-height:0;
+}
+.maintenance .graphw_admin-card{
+	padding-bottom: 90px;
+}
+.maintenance {
+textarea{
+	width: 70%;
+	height:100px;
+}
+.inline{
+	display:inline;
+}
+img{
+	max-width: 50%;
+	max-height:300px;
+}
+	.image-uploader-div{
+		position:relative;
+		bottom:auto;
+		right:auto;
+		width:auto;
+	}
+}

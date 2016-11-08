@@ -1,0 +1,99 @@
+// utilities-------------------
+
+/* This section has classes based on small appearance changes */
+
+img {
+  position: relative;
+	max-width: 100%;
+	height: auto;
+}
+blockquote {
+	font-size: 2.4rem;
+	font-family: $blockquote-font;
+	font-style: italic;
+}
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border:0;
+  border-top: 1px solid $hr-color; }
+a{ 
+  text-decoration:none;
+}
+
+.lead-in {
+  font-size: 1.8rem;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.u-pull-right {
+  float: right;
+}
+.u-pull-left {
+  float: left;
+}
+.accent {
+  color: $accent;
+}
+.vert-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%); 
+  transform: translateY(-50%); 
+}
+.vert-bottom{
+  position: relative;
+  top: 100%;
+  -webkit-transform: translateY(-100%); 
+  -ms-transform: translateY(-100%); 
+  transform: translateY(-100%); 
+}
+.full-screen-y{
+  height:100vh;
+}
+.fifty{
+  width:50%;
+}
+.rounded{
+  border-radius:100px !important;
+}
+.cursor {
+  cursor:default;
+  &:hover{
+    opacity: 1;
+    color:inherit;
+  }
+}
+
+//images
+
+.small-img{
+  height:50px;
+  width:50px;
+  object-fit: cover;
+}
+.round{
+  border-radius:100%;
+}
