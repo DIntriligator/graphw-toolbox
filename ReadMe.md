@@ -1,4 +1,4 @@
-~Current Version:0.8.5~
+
 
 # GRAPHICS WESTCHESTER TOOLSET
 
