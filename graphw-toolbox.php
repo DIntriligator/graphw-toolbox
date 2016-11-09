@@ -52,8 +52,8 @@ function graphw_toolbox_activate() {
 
   //Add template pages
   $loops = get_option('gw-loops');
-  if (!file_exists('path/to/directory')) {
-    mkdir('path/to/directory', 0755, true);
+  if (!file_exists(plugin_dir_path( __FILE__ ) . 'templates')) {
+    mkdir(plugin_dir_path( __FILE__ ) . 'templates', 0755, true);
 }
   if($loops){
     foreach($loops as $loop){
