@@ -49,6 +49,20 @@ function graphw_toolbox_activate() {
         add_option('graphw-'.$type.'-image-size');
       }
     }
+
+  //Add template pages
+  $loops = get_option('gw-loops');
+  if (!file_exists('path/to/directory')) {
+    mkdir('path/to/directory', 0755, true);
+}
+  if($loops){
+    foreach($loops as $loop){
+      $loops[$loop_id]['loop-content'] = $_POST['loop-content-' . $loop_id];
+      file_put_contents ( dirname(__FILE__) . 'templates/loop-' . $loop_id. '.php', stripslashes($_POST['loop-content-' . $loop_id]));
+    }
+  }
+
+
 }
 register_activation_hook( __FILE__, 'graphw_toolbox_activate' );
 // ********************** SHORTCODES ********************** //
