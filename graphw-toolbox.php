@@ -3,7 +3,7 @@
 Plugin Name: Graphics Westchester Toolset
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
-Version: 0.1.00
+Version: 0.0.01
 */
 
 
