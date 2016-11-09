@@ -5,7 +5,7 @@ GitHub Plugin URI: dintriligator/graphw-toolbox
 GitHub Plugin URI: https://github.com/dintriligator/graphw-toolbox
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
-Version: 0.1.01
+Version: 0.1.00
 */
 
 
