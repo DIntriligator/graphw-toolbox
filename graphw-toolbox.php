@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Graphics Westchester Toolset
-GitHub Plugin URI: dintriligator/graphw-toolbox
+GitHub Plugin URI: dintriligator/graphw-toolbox 
 GitHub Plugin URI: https://github.com/dintriligator/graphw-toolbox
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
