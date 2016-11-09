@@ -1,6 +1,8 @@
 <?php
 /*
 Plugin Name: Graphics Westchester Toolset
+Plugin URI: https://github.com/DIntriligator/graphw-toolbox
+Git URI: https://github.com/DIntriligator/graphw-toolbox
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
 Version: 0.0.00
@@ -92,29 +94,13 @@ include( plugin_dir_path( __FILE__ ) . 'modules/add-client-user.php');
 *  @param   N/A
 *  @return  N/A
 */
-add_action( 'init', 'graphw_plugin_updater_init' );
-function graphw_plugin_updater_init() {
+add_action( 'plugins_loaded', 'graphw_git_updater' );
 
-    define( 'WP_GITHUB_FORCE_UPDATE', true );
-    include_once('updater/updater.php');
-
-
-       if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
-           $config = array(
-               'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
-               'proper_folder_name' => 'graphw-toolbox', // this is the name of the folder your plugin lives in
-               'api_url' => 'https://api.github.com/repos/dintriligator/graphw-toolbox', // the GitHub API url of your GitHub repo
-               'raw_url' => 'https://raw.githubusercontent.com/dintriligator/graphw-toolbox/master', // the GitHub raw url of your GitHub repo
-               'github_url' => 'https://github.com/dintriligator/graphw-toolbox/master', // the GitHub url of your GitHub repo
-               'zip_url' => 'https://github.com/dintriligator/graphw-toolbox/archive/master.zip', // the zip url of the GitHub repo
-               'sslverify' => true, // whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
-               'requires' => '4.0.0', // which version of WordPress does your plugin require?
-               'tested' => '4.5.2', // which version of WordPress is your plugin tested up to?
-               'readme' => 'ReadMe.md', // which file to use as the readme for the version number
-               'access_token' => '', // Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
-           );
-           new WP_GitHub_Updater($config);
-       }
-   }
+function graphw_git_updater() {
+    if ( is_admin() && !class_exists( 'GPU_Controller' ) ) {
+        require_once dirname( __FILE__ ) . '/git-plugin-updates/git-plugin-updates.php';
+        add_action( 'plugins_loaded', 'GPU_Controller::get_instance', 20 );
+    }
+}   }
 
    ?>
