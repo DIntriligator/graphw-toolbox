@@ -54,6 +54,7 @@ function graphw_toolbox_activate() {
   $loops = get_option('gw-loops');
   if($loops){
     foreach($loops as $loop){
+      $loop_id = $loop['id'];
       $loops[$loop_id]['loop-content'] = $_POST['loop-content-' . $loop_id];
       file_put_contents ( dirname(__FILE__) . 'templates/loop-' . $loop_id. '.php', stripslashes($_POST['loop-content-' . $loop_id]));
     }
