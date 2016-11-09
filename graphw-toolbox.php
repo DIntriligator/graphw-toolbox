@@ -1,7 +1,8 @@
 <?php
 /*
 Plugin Name: Graphics Westchester Toolset
-Git URI: https://github.com/dintriligator/graphw-toolbox
+GitHub Plugin URI: dintriligator/graphw-toolbox
+GitHub Plugin URI: https://github.com/dintriligator/graphw-toolbox
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
 Version: 0.0.00
@@ -77,29 +78,5 @@ include( plugin_dir_path( __FILE__ ) . 'modules/custom-excerpt.php');
 // ********************** CLIENT USER ROLE ********************** //
 
 include( plugin_dir_path( __FILE__ ) . 'modules/add-client-user.php');
-
-// ********************** PLUGIN UPDATER ********************** //
-
-
-/*
-*  graphw_plugin_updater_init
-*
-*  This function sets up the updater for the plugin to get updates via github
-*
-*  @type    function
-*  @date    06/15/12
-*  @since   0.0.0
-*
-*  @param   N/A
-*  @return  N/A
-*/
-add_action( 'plugins_loaded', 'graphw_git_updater' );
-
-function graphw_git_updater() {
-    if ( is_admin() && !class_exists( 'GPU_Controller' ) ) {
-        require_once dirname( __FILE__ ) . '/git-plugin-updates/git-plugin-updates.php';
-        add_action( 'plugins_loaded', 'GPU_Controller::get_instance', 20 );
-    }
-}   
 
    ?>
