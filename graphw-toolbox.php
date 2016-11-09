@@ -1,11 +1,10 @@
 <?php
 /*
 Plugin Name: Graphics Westchester Toolset
-Plugin URI: https://github.com/DIntriligator/graphw-toolbox
-Git URI: https://github.com/DIntriligator/graphw-toolbox
+Git URI: https://github.com/dintriligator/graphw-toolbox
 Description: A toolset for websites developed by Graphics Westchester
 Author:      Graphics Westchester
-Version: 0.0.01
+Version: 0.0.00
 */
 
 
@@ -101,6 +100,6 @@ function graphw_git_updater() {
         require_once dirname( __FILE__ ) . '/git-plugin-updates/git-plugin-updates.php';
         add_action( 'plugins_loaded', 'GPU_Controller::get_instance', 20 );
     }
-}   }
+}   
 
    ?>
