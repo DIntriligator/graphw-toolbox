@@ -52,9 +52,6 @@ function graphw_toolbox_activate() {
 
   //Add template pages
   $loops = get_option('gw-loops');
-  if (!file_exists(plugin_dir_path( __FILE__ ) . 'templates')) {
-    mkdir(plugin_dir_path( __FILE__ ) . 'templates', 0755, true);
-}
   if($loops){
     foreach($loops as $loop){
       $loops[$loop_id]['loop-content'] = $_POST['loop-content-' . $loop_id];
